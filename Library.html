@@ -18,8 +18,9 @@
     <a href="#recent">Recent</a> |
     <a href="Profile.html">Profile</a>
 </nav>
+<main>
 <section>
-    <nav>
+    <nav aria-label="Library sections">
         <ul>
             <li><a href="#recent">Recent</a></li>
             <li><a href="#playlists">Playlists</a></li>
@@ -28,7 +29,7 @@
         </ul>
     </nav>
 </section>
-    <section>
+    <section id="library-search-section">
     <h2>Search Your Library</h2>
 
     <form action="#" method="get">
@@ -40,13 +41,7 @@
 </section>
 <aside id="playlists">
     <h2>Your Playlists</h2>
-
-    <ul>
-       <li><a href="#recent">My Favorites</a></li>
-<li><a href="#recent">Chill Music</a></li>
-<li><a href="#recent">Ethiopian Music</a></li>
-<li><a href="#recent">Workout Music</a></li>
-    </ul>
+    <p>Your playlists will appear here.</p>
     <button type="button">Create Playlist</button>
 </aside>
 <section id="recent">
@@ -73,8 +68,10 @@
         <h2>Free Listening Usage</h2>
         <p>Track how much of your monthly free listening allowance you have used.</p>
     </header>
-    <progress value="0" max="30">0 out of 30</progress>
+    <label for="free-progress">Monthly free songs used:</label>
+<progress id="free-progress" value="0" max="30">0 out of 30</progress>
     <p>0 of 30 free songs used this month.</p>
 </section>
+</main>
 </body>
 </html>
