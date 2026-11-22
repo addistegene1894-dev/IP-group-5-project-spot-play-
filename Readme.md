@@ -131,7 +131,6 @@ To view this project locally:
 | Beka Solomon | ETS 0242/17 |
 | Deborah Mesfin | ETS 0434/17 |
 | Addis Tegene | ETS 0097/17 |
-| Abreham Teshale | ETS 0076/17 |
 | Amanuel Alemayehu | ETS 0144/17 |
 | Berhanu Liku | ETS 0321/17 |
 
