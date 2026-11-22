@@ -6,6 +6,250 @@
     <title>Home</title>
 </head>
 <body>
+<section class="hero">
+
+    <header class="hero-content">
+        <h1>Spot Play – Music Made Simple</h1>
+        
+        <p>
+            Discover. Listen. Enjoy. Your Music, Your Choice. 
+            Explore music, search for your favorite songs, and create playlists 
+            with flexible options that suit your budget.
+        </p>
+        <nav>
+            <a href="#Search">Search</a>|
+            <a href="#Music">Browse Music</a>|
+            <a href="#FAQ">FAQ</a>|
+            <a href="#Payment">Payment</a>|
+            <a href="Library.html">Library</a>|
+            <a href="Profile.html">Profile</a>
+            
+        </nav>
+    </header>
+
+    <figure class="hero-image">
+        <img src="Pics/ML.png" alt="Illustration of a person listening to music">
+    </figure><hr>
+
+    
+</section>
+
+<section id="Search">
+    <form method="get">
+        <filedset><legend><h3>Search</h3></legend></filedset>
+        <feiledset>
+            <table>
+                <tr>
+                    <td><label for="title">Enter music title</label></td>
+                    <td><input id="title" name="st" type="text"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Enter Artist's Name</label></td>
+                    <td><input id="name" name="sa" type="text"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="genre">Enter Music Genre</label></td>
+                    <td><input id="genre" name="sg" type="text"><br></td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit">
+        </feiledset>
+
+    </form><hr>
+</section>
+    
+<section id="Music" class="song-card">
+
+    <header class="section-header">
+        <h2>Discover New Music</h2>
+        <p>Explore available songs and find music based on your interests.</p>
+    </header>
+
+    <article class="song-card">
+        <figure>
+            <img src="Pics/Monalisa.png" alt="Album cover for Monalisa">
+            <figcaption>LOJAY X SARZ Monalisa</figcaption>
+        </figure>
+        
+        <h3>Midnight Vibes</h3>
+        <p>Artist: LOJAY X SARZ</p>
+
+        <ul class="genre-list">
+            <li>Afrobeats</li>
+            <li>Chill</li>
+        </ul>
+        
+        <audio controls>
+            <source src="Music/LOJAY X SARZ - MONALISA.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <a href="song-detail.html" class="view-details-link">View Details</a>
+    </article>
+
+    <article class="song-card">
+        <figure>
+            <img src="Pics/TM_LN.png" alt="Album cover for Lijemregne New">
+            <figcaption>Lijemregne New</figcaption>
+        </figure>
+        
+        <h3>Ethiopian Sunset</h3>
+        <p>Artist: Tamrat Desta</p>
+        
+        <ul class="genre-list">
+            <li>Traditional</li>
+            <li>Modern</li>
+        </ul>
+        
+        <audio controls>
+            <source src="Music/Lijemregne New.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <a href="song-detail.html" class="view-details-link">View Details</a>
+    </article>
+
+    <article class="song-card">
+        <figure>
+            <img src="Pics/GLY.png" alt="Album cover for Girls Like You">
+            <figcaption>Girls Like You</figcaption>
+        </figure>
+        
+        <h3>Acoustic Soul</h3>
+        <p>Artist: Cardi B and Maron 5</p>
+        
+        <ul class="genre-list">
+            <li>Acoustic</li>
+            <li>R&amp;B</li>
+        </ul>
+        
+        <audio controls>
+            <source src="Music/Maroon 5 - Girls Like You ft. Cardi B (Official Music Video).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <a href="song-detail.html" class="view-details-link">View Details</a>
+    </article>
+
+    <article class="song-card">
+        <figure>
+            <img src="Pics/ME_Bemn Kal.png" alt="Album cover for Bemn Kal">
+            <figcaption>Bemn Kal</figcaption>
+        </figure>
+        
+        <h3>Modern Ethiopian Song</h3>
+        <p>Artist: Mastewal Eyayu</p>
+        
+        <ul class="genre-list">
+            <li>Modern</li>
+            <li>A Ethiopian Song</li>
+        </ul>
+        
+        <audio controls>
+             <source src="Music/ela_tv_Mastewal_Eyayu_Bemen_Kal_በምን_ቃል_New_Ethiopian_M.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <a href="#" class="view-details-link">View Details</a>
+    </article>
+
+    <article class="song-card">
+        <figure>
+            <img src="Pics/ME_Embi.png" alt="Album cover for Embi">
+            <figcaption>Embi</figcaption>
+        </figure>
+        
+        <h3>Modern Ethiopian Song</h3>
+        <p>Artist: Mastewal Eyayu</p>
+        
+        <ul class="genre-list">
+            <li>Modern</li>
+            <li>A Ethiopian Song</li>
+        </ul>
+        
+        <audio controls>
+            <source src="Music/ela_tv_Mastewal_Eyayu_Embi_እምቢ_New_Ethiopian_Music_202.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <a href="#" class="view-details-link">View Details</a>
+    </article>
+
+</section>
+
+<section id="FAQ">
+    <h3>FAQ</h3>
+    <details>
+        <summary>What does Spot play has to offer?</summary>
+        <ul>
+            <li><p>Spot play has a variety of functionalities including Packages, song leasing, subscriptions and local payment options</p></li>
+        </ul>
+    </details>
+    <details>
+        <summary>What are teh current payment options?</summary>
+        <ul>
+            <li><p>TeleBirr</p></li>
+            <li><p>CBE</p></li>
+            <li><p>CBE Birr</p></li>
+        </ul>
+    </details>
+    <details>
+        <summary>Is it secure?</summary>
+        <ul>
+            <li><p>Spot play has a payment checking staff behind the software to approve every payment and in the events such as double payment, insufficient balance etc.</p></li>
+        </ul>
+    </details>
+    <details>
+        <summary>What is the purpose of Spot play?</summary>
+        <ul>
+            <li><p>Spot play aims to introduce a platform that Ethiopian local artists can get listeners without much competition from more established artists abroad.</p></li>
+            <li><p>Spot play aims to popularize the music streaming industry in Ethiopia.</p></li>
+            <li><p>Spot play aims to benefit artists in the music industry of Ethiopian origin by providing higher royality checks while simultaneously earning profit through the services it offers to listeners.</p></li>
+        </ul>
+    </details>
+
+
+</section>
+
+<section id="Payment" class="payment-info">
+    
+    <header class="section-header">
+        <h2>Payment Information</h2>
+        <p>Simple, secure, and flexible payment options in Ethiopian Birr (ETB).</p>
+    </header>
+
+    <article class="payment-steps">
+        <h3>How to Complete Your Payment</h3>
+        <ol>
+            <li>Select your preferred music package, lease duration, or subscription plan.</li>
+            <li>Click the "Checkout" or "Subscribe" button.</li>
+            <li>Choose your preferred payment method from the available options.</li>
+            <li>Confirm the payment on your mobile device or banking app.</li>
+            <li>Once confirmed, your premium access will be activated immediately!</li>
+        </ol>
+    </article>
+
+    <article class="payment-methods">
+        <h3>Accepted Payment Methods</h3>
+        <p>We accept the following secure payment options:</p>
+        <ul>
+            <li>Telebirr</li>
+            <li>CBE birr</li>
+            <li>CBE mobile banking</li>
+        </ul>
+        
+        <table>
+            <tr>
+                <td><img src="Pics/Telebirr.png" alt="Telebirr Payment Logo"></td>
+                <td><img src="Pics/CBE-birr.png" alt="CBE Birr Payment Logo"></td>
+                <td><img src="Pics/CBE.png" alt="Awash Bank Payment Logo"></td>
+            </tr>
+        </table>
+    
+    </article>
+
+</section>
+
     
 </body>
 </html>
