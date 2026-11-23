@@ -1,77 +1,187 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
+    <title>Spot Play - My Library</title>
 </head>
 <body>
-    <header>
-    <h1>My Library</h1>
-    <p>Your playlists, leases, and downloads</p>
-</header>
-<nav>
-    <a href="Home.html">Home</a> |
-    <a href="#playlists">Playlists</a> |
-    <a href="#leased">Leased</a> |
-    <a href="#downloads">Downloaded</a> |
-    <a href="#recent">Recent</a> |
-    <a href="Profile.html">Profile</a>
-</nav>
-<main>
-<section>
-    <nav aria-label="Library sections">
-        <ul>
-            <li><a href="#recent">Recent</a></li>
-            <li><a href="#playlists">Playlists</a></li>
-            <li><a href="#leased">Leased</a></li>
-            <li><a href="#downloads">Downloaded</a></li>
-        </ul>
-    </nav>
-</section>
-    <section id="library-search-section">
-    <h2>Search Your Library</h2>
 
-    <form action="#" method="get">
-        <label for="library-search">Search songs or artists:</label>
-        <input type="search" id="library-search" name="search"
-               placeholder="Enter song or artist name">
-        <button type="submit">Search</button>
-    </form>
-</section>
-<aside id="playlists">
-    <h2>Your Playlists</h2>
-    <p>Your playlists will appear here.</p>
-    <button type="button">Create Playlist</button>
-</aside>
-<section id="recent">
     <header>
-        <h2>Recently Played</h2>
-        <p>Your recently played songs will appear here.</p>
+        <h1>My Library</h1>
+        <p>Your playlists, leases, and downloads</p>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Library.html">Library</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+            </ul>
+        </nav>
     </header>
-</section>
-<section id="leased">
-    <header>
-        <h2>Leased Music</h2>
-        <p>Music you have temporarily leased will appear here.</p>
-    </header>
-</section>
-<section id="downloads">
-    <header>
-        <h2>Downloaded Music</h2>
-        <p>Your downloaded songs will appear here.</p>
-    </header>
-    <p>No downloads yet. Explore music and download your favorites!</p>
-</section>
-<section id="free-listening">
-    <header>
-        <h2>Free Listening Usage</h2>
-        <p>Track how much of your monthly free listening allowance you have used.</p>
-    </header>
-    <label for="free-progress">Monthly free songs used:</label>
-<progress id="free-progress" value="0" max="30">0 out of 30</progress>
-    <p>0 of 30 free songs used this month.</p>
-</section>
-</main>
+
+    <main>
+
+        <nav aria-label="Library sections">
+            <ul>
+                <li><a href="#playlists">Playlists</a></li>
+                <li><a href="#recent">Recent</a></li>
+                <li><a href="#leased">Leased</a></li>
+                <li><a href="#downloads">Downloaded</a></li>
+                <li><a href="#free-listening">Free Listening</a></li>
+            </ul>
+        </nav>
+
+        <section id="library-search">
+            <h2>Search Your Library</h2>
+            <form action="#" method="get">
+                <label for="library-query">Search songs or artists:</label>
+                <input type="search" id="library-query" name="query"
+                       placeholder="Enter song or artist name">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <aside id="playlists">
+            <h2>Your Playlists</h2>
+
+            <ul>
+                <li><a href="#recent">My Favorites</a></li>
+                <li><a href="#recent">Ethiopian Music</a></li>
+                <li><a href="#recent">Chill Vibes</a></li>
+            </ul>
+
+            <button type="button">Create Playlist</button>
+        </aside>
+
+        <section id="recent">
+            <header>
+                <h2>Recently Played</h2>
+                <p>Listen again to music you recently enjoyed.</p>
+            </header>
+
+            <article>
+                <figure>
+                    <img src="Pics/Monalisa.png"
+                         alt="Monalisa album cover">
+                    <figcaption>Monalisa</figcaption>
+                </figure>
+
+                <h3>LOJAY X SARZ - MONALISA</h3>
+                <p>Artist: LOJAY X SARZ</p>
+
+                <audio controls>
+                    <source src="Music/LOJAY X SARZ - MONALISA.mp3"
+                            type="audio/mpeg">
+                    Your browser does not support audio playback.
+                </audio>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="Pics/ME_Embi.png" alt="Embi album cover">
+                    <figcaption>Embi</figcaption>
+                </figure>
+
+                <h3>Embi</h3>
+                <p>Artist: Mastewal Eyayu</p>
+
+                <audio controls>
+                    <source src="Music/ela_tv_Mastewal_Eyayu_Embi_እምቢ_New_Ethiopian_Music_202.mp3"
+                            type="audio/mpeg">
+                    Your browser does not support audio playback.
+                </audio>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="Pics/ME_Bemn Kal.png"
+                         alt="Bemen Kal album cover">
+                    <figcaption>Bemen Kal</figcaption>
+                </figure>
+
+                <h3>Bemen Kal</h3>
+                <p>Artist: Mastewal Eyayu</p>
+
+                <audio controls>
+                    <source src="Music/ela_tv_Mastewal_Eyayu_Bemen_Kal_በምን_ቃል_New_Ethiopian_M.mp3"
+                            type="audio/mpeg">
+                    Your browser does not support audio playback.
+                </audio>
+            </article>
+
+        </section>
+
+        <section id="leased">
+            <header>
+                <h2>Leased Music</h2>
+                <p>Manage your leased songs and their expiration dates.</p>
+            </header>
+
+            <table>
+                <caption>Your leased songs</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Song</th>
+                        <th scope="col">Artist</th>
+                        <th scope="col">Lease Expiry</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Bemen Kal</td>
+                        <td>Mastewal Eyayu</td>
+                        <td><time datetime="2026-12-30">Dec 30, 2026</time></td>
+                        <td><button type="button">Renew Lease</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Embi</td>
+                        <td>Mastewal Eyayu</td>
+                        <td><time datetime="2026-12-25">Dec 25, 2026</time></td>
+                        <td><button type="button">Renew Lease</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="downloads">
+            <header>
+                <h2>Downloaded Music</h2>
+                <p>Access your downloaded music.</p>
+            </header>
+
+            <article>
+                <h3>Your Downloads</h3>
+                <p>No downloads yet. Explore music and download your favorites!</p>
+                <a href="Home.html#Music">Explore Music</a>
+            </article>
+        </section>
+
+        <section id="free-listening">
+            <header>
+                <h2>Free Listening Progress</h2>
+                <p>Track your free songs for this month.</p>
+            </header>
+
+            <label for="listening-progress">Monthly listening limit:</label>
+            <progress id="listening-progress" value="0" max="30"></progress>
+
+            <p>0 of 30 free songs used this month.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <address>
+            Spot Play - Music Made Simple
+        </address>
+        <p><small>&copy; 2026 Spot Play. All rights reserved.</small></p>
+    </footer>
+
 </body>
 </html>
