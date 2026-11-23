@@ -33,15 +33,40 @@
             </ul>
         </nav>
 
+        
         <section id="library-search">
-            <h2>Search Your Library</h2>
+            <header>
+                <h2>Search Your Library</h2>
+                <p>Find songs, artists, or music in your collection.</p>
+            </header>
+
             <form action="#" method="get">
-                <label for="library-query">Search songs or artists:</label>
-                <input type="search" id="library-query" name="query"
-                       placeholder="Enter song or artist name">
-                <button type="submit">Search</button>
+                <fieldset>
+                    <legend>Library Search</legend>
+
+                    <label for="library-query">Song title:</label>
+                    <input type="search" id="library-query" name="song"
+                        placeholder="Enter song name">
+
+                    <label for="artist-query">Artist:</label>
+                    <input type="text" id="artist-query" name="artist"
+                        placeholder="Enter artist name">
+
+                    <label for="library-category">Search category:</label>
+                    <select id="library-category" name="category">
+                        <option value="all">All Library</option>
+                        <option value="playlists">Playlists</option>
+                        <option value="recent">Recently Played</option>
+                        <option value="leased">Leased Music</option>
+                        <option value="downloads">Downloaded Music</option>
+                    </select>
+
+                    <button type="submit">Search</button>
+                    <button type="reset">Clear</button>
+                </fieldset>
             </form>
         </section>
+      
 
 
         <aside id="playlists">
