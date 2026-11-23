@@ -224,31 +224,55 @@
         </tfoot>
     </table>
 </section>
-        
-        <section>
-            <h2>Settings and Preferences</h2>
+          <section>
+    <h2>Settings and Preferences</h2>
 
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Notification Preferences</legend>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Notification Preferences</legend>
 
-                    <input type="checkbox" id="email-notifications" name="notifications" value="email" checked>
-                    <label for="email-notifications">Receive email notifications</label>
-                    <br><br>
+            <input type="checkbox" id="email-notifications" name="notifications" value="email" checked>
+            <label for="email-notifications">Receive email notifications</label>
+            <br><br>
 
-                    <input type="checkbox" id="music-updates" name="notifications" value="music">
-                    <label for="music-updates">Receive new music and playlist updates</label>
-                    <br><br>
+            <input type="checkbox" id="music-updates" name="notifications" value="music">
+            <label for="music-updates">Receive new music and playlist updates</label>
+            <br><br>
 
-                    <input type="checkbox" id="promotions" name="notifications" value="promotions">
-                    <label for="promotions">Receive promotional messages and offers</label>
-                </fieldset>
+            <input type="checkbox" id="promotions" name="notifications" value="promotions">
+            <label for="promotions">Receive promotional messages and offers</label>
+        </fieldset>
 
-                <br>
-                <button type="submit">Save Preferences</button>
-            </form>
-        </section>
-  
+        <fieldset>
+            <legend>Appearance Settings</legend>
+
+            <p>Choose your preferred theme:</p>
+
+            <input type="radio" id="light-theme" name="theme" value="light" checked>
+            <label for="light-theme">Light Theme</label>
+            <br>
+
+            <input type="radio" id="dark-theme" name="theme" value="dark">
+            <label for="dark-theme">Dark Theme</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Settings</legend>
+
+            <label for="payment-method">Preferred Payment Method:</label>
+
+            <select id="payment-method" name="payment-method">
+                <option value="telebirr">Telebirr</option>
+                <option value="cbe-birr">CBE Birr</option>
+                <option value="bank-transfer">Bank Transfer</option>
+            </select>
+        </fieldset>
+
+        <br>
+        <button type="submit">Save Preferences</button>
+       </form>
+    </section>
+
     </main>
 
 </body>
