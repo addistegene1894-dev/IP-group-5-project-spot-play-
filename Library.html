@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +22,6 @@
 
     <main>
 
-
         <section id="library-overview">
             <header>
                 <h2>Your Music Overview</h2>
@@ -31,25 +29,13 @@
             </header>
 
             <ul>
-                <li>
-                    <strong>Playlists:</strong> 3 collections
-                </li>
-                <li>
-                    <strong>Recently Played:</strong> 5 songs
-                </li>
-                <li>
-                    <strong>Leased Songs:</strong> 3 songs
-                </li>
-                <li>
-                    <strong>Downloaded Songs:</strong> 2 songs
-                </li>
-                <li>
-                    <strong>Free Listening:</strong> 12 of 30 songs used
-                </li>
+                <li><strong>Playlists:</strong> 3 collections</li>
+                <li><strong>Recently Played:</strong> 5 songs</li>
+                <li><strong>Leased Songs:</strong> 3 songs</li>
+                <li><strong>Downloaded Songs:</strong> 2 songs</li>
+                <li><strong>Free Listening:</strong> 12 of 30 songs used</li>
             </ul>
         </section>
-
-
 
         <nav aria-label="Library sections">
             <ul>
@@ -61,7 +47,6 @@
             </ul>
         </nav>
 
-        
         <section id="library-search">
             <header>
                 <h2>Search Your Library</h2>
@@ -74,11 +59,11 @@
 
                     <label for="library-query">Song title:</label>
                     <input type="search" id="library-query" name="song"
-                        placeholder="Enter song name">
+                           placeholder="Enter song name">
 
                     <label for="artist-query">Artist:</label>
                     <input type="text" id="artist-query" name="artist"
-                        placeholder="Enter artist name">
+                           placeholder="Enter artist name">
 
                     <label for="library-category">Search category:</label>
                     <select id="library-category" name="category">
@@ -93,12 +78,10 @@
                     <button type="reset">Clear</button>
                 </fieldset>
             </form>
+            <p><small>Search is a demonstration form and does not filter music yet.</small></p>
         </section>
-      
 
-
-
-        <aside id="playlists">
+        <section id="playlists">
             <h2>Your Playlists</h2>
 
             <details>
@@ -137,20 +120,18 @@
 
                     <label for="playlist-name">Playlist name:</label>
                     <input type="text" id="playlist-name" name="playlist-name"
-                        placeholder="Enter playlist name" required>
+                           placeholder="Enter playlist name" required>
 
                     <label for="playlist-description">Description:</label>
                     <textarea id="playlist-description" name="description"
-                            rows="3" placeholder="Describe your playlist"></textarea>
+                              rows="3" placeholder="Describe your playlist"></textarea>
 
                     <button type="submit">Create Playlist</button>
                     <button type="reset">Clear</button>
                 </fieldset>
             </form>
-        </aside>
-
-
-
+            <p><small>Playlist creation is a demonstration form and does not save playlists yet.</small></p>
+        </section>
 
         <section id="recent">
             <header>
@@ -244,8 +225,6 @@
             </article>
         </section>
 
-
-
         <section id="leased">
             <header>
                 <h2>Leased Music</h2>
@@ -295,9 +274,8 @@
                     </tr>
                 </tbody>
             </table>
+            <p><small>Lease renewal buttons are demonstration controls.</small></p>
         </section>
-
-
 
         <section id="downloads">
             <header>
@@ -305,48 +283,46 @@
                 <p>Enjoy your music offline anytime.</p>
             </header>
 
-            <article>
-                <h3>Your Downloads</h3>
+            <h3>Your Downloads</h3>
 
-                <table>
-                    <caption>Downloaded songs</caption>
+            <table>
+                <caption>Downloaded songs</caption>
 
-                    <thead>
-                        <tr>
-                            <th scope="col">Song</th>
-                            <th scope="col">Artist</th>
-                            <th scope="col">Format</th>
-                            <th scope="col">Action</th>
-                        </tr>
-                    </thead>
+                <thead>
+                    <tr>
+                        <th scope="col">Song</th>
+                        <th scope="col">Artist</th>
+                        <th scope="col">Format</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
 
-                    <tbody>
-                        <tr>
-                            <td>Bemen Kal</td>
-                            <td>Mastewal Eyayu</td>
-                            <td>MP3</td>
-                            <td><button type="button">Remove</button></td>
-                        </tr>
+                <tbody>
+                    <tr>
+                        <td>Bemen Kal</td>
+                        <td>Mastewal Eyayu</td>
+                        <td>MP3</td>
+                        <td><button type="button">Remove</button></td>
+                    </tr>
 
-                        <tr>
-                            <td>Monalisa</td>
-                            <td>LOJAY X SARZ</td>
-                            <td>MP3</td>
-                            <td><button type="button">Remove</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
+                    <tr>
+                        <td>Monalisa</td>
+                        <td>LOJAY X SARZ</td>
+                        <td>MP3</td>
+                        <td><button type="button">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><small>Remove buttons are demonstration controls.</small></p>
 
             <article>
                 <h3>Download More Music</h3>
-                <p>No additional downloads available yet? Explore our music collection.</p>
+                <p>Explore our music collection to discover more songs.</p>
                 <a href="Home.html#Music">Explore Music</a>
             </article>
         </section>
 
-
-        
         <section id="free-listening">
             <header>
                 <h2>Free Listening Plan</h2>
@@ -376,8 +352,6 @@
                 <a href="Home.html#Payment">Explore music packages</a>
             </article>
         </section>
-      
-
 
         <section id="library-help">
             <h2>Library Help</h2>
@@ -402,8 +376,6 @@
                 <p>Your free listening section tracks the number of songs used against your monthly allowance.</p>
             </details>
         </section>
-
-
 
     </main>
 
