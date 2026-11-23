@@ -3,9 +3,389 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
+    <title>Spot Play - My Library</title>
 </head>
 <body>
-    
+
+    <header>
+        <h1>My Library</h1>
+        <p>Your playlists, leases, and downloads</p>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Library.html">Library</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="library-overview">
+            <header>
+                <h2>Your Music Overview</h2>
+                <p>A quick look at your music collection.</p>
+            </header>
+
+            <ul>
+                <li><strong>Playlists:</strong> 3 collections</li>
+                <li><strong>Recently Played:</strong> 5 songs</li>
+                <li><strong>Leased Songs:</strong> 3 songs</li>
+                <li><strong>Downloaded Songs:</strong> 2 songs</li>
+                <li><strong>Free Listening:</strong> 12 of 30 songs used</li>
+            </ul>
+        </section>
+
+        <nav aria-label="Library sections">
+            <ul>
+                <li><a href="#playlists">Playlists</a></li>
+                <li><a href="#recent">Recent</a></li>
+                <li><a href="#leased">Leased</a></li>
+                <li><a href="#downloads">Downloaded</a></li>
+                <li><a href="#free-listening">Free Listening</a></li>
+            </ul>
+        </nav>
+
+        <section id="library-search">
+            <header>
+                <h2>Search Your Library</h2>
+                <p>Find songs, artists, or music in your collection.</p>
+            </header>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Library Search</legend>
+
+                    <label for="library-query">Song title:</label>
+                    <input type="search" id="library-query" name="song"
+                           placeholder="Enter song name">
+
+                    <label for="artist-query">Artist:</label>
+                    <input type="text" id="artist-query" name="artist"
+                           placeholder="Enter artist name">
+
+                    <label for="library-category">Search category:</label>
+                    <select id="library-category" name="category">
+                        <option value="all">All Library</option>
+                        <option value="playlists">Playlists</option>
+                        <option value="recent">Recently Played</option>
+                        <option value="leased">Leased Music</option>
+                        <option value="downloads">Downloaded Music</option>
+                    </select>
+
+                    <button type="submit">Search</button>
+                    <button type="reset">Clear</button>
+                </fieldset>
+            </form>
+            <p><small>Search is a demonstration form and does not filter music yet.</small></p>
+        </section>
+
+        <section id="playlists">
+            <h2>Your Playlists</h2>
+
+            <details>
+                <summary>My Favorites</summary>
+                <p>Your favorite songs collected in one place.</p>
+                <ol>
+                    <li>LOJAY X SARZ - MONALISA</li>
+                    <li>Girls Like You - Maroon 5 ft. Cardi B</li>
+                </ol>
+            </details>
+
+            <details>
+                <summary>Ethiopian Music</summary>
+                <p>A collection of Ethiopian music.</p>
+                <ol>
+                    <li>Bemen Kal - Mastewal Eyayu</li>
+                    <li>Embi - Mastewal Eyayu</li>
+                    <li>Lijemregne New - Tamrat Desta</li>
+                </ol>
+            </details>
+
+            <details>
+                <summary>Chill Vibes</summary>
+                <p>Music for relaxing and unwinding.</p>
+                <ol>
+                    <li>Girls Like You - Maroon 5 ft. Cardi B</li>
+                    <li>Monalisa - LOJAY X SARZ</li>
+                </ol>
+            </details>
+
+            <h3>Create a New Playlist</h3>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Playlist Details</legend>
+
+                    <label for="playlist-name">Playlist name:</label>
+                    <input type="text" id="playlist-name" name="playlist-name"
+                           placeholder="Enter playlist name" required>
+
+                    <label for="playlist-description">Description:</label>
+                    <textarea id="playlist-description" name="description"
+                              rows="3" placeholder="Describe your playlist"></textarea>
+
+                    <button type="submit">Create Playlist</button>
+                    <button type="reset">Clear</button>
+                </fieldset>
+            </form>
+            <p><small>Playlist creation is a demonstration form and does not save playlists yet.</small></p>
+        </section>
+
+        <section id="recent">
+            <header>
+                <h2>Recently Played</h2>
+                <p>Replay songs you've recently enjoyed.</p>
+            </header>
+
+            <article>
+                <figure>
+                    <img src="Pics/Monalisa.png" alt="Monalisa album cover">
+                    <figcaption>Monalisa</figcaption>
+                </figure>
+
+                <h3>LOJAY X SARZ - MONALISA</h3>
+                <p>Artist: LOJAY X SARZ</p>
+                <p>Genre: Afrobeats</p>
+
+                <audio controls>
+                    <source src="Music/LOJAY X SARZ - MONALISA.mp3"
+                            type="audio/mpeg">
+                    Your browser does not support audio playback.
+                </audio>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="Pics/ME_Embi.png" alt="Embi album cover">
+                    <figcaption>Embi</figcaption>
+                </figure>
+
+                <h3>Embi</h3>
+                <p>Artist: Mastewal Eyayu</p>
+                <p>Genre: Ethiopian Music</p>
+
+                <audio controls>
+                    <source src="Music/ela_tv_Mastewal_Eyayu_Embi_እምቢ_New_Ethiopian_Music_202.mp3"
+                            type="audio/mpeg">
+                    Your browser does not support audio playback.
+                </audio>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="Pics/ME_Bemn Kal.png" alt="Bemen Kal album cover">
+                    <figcaption>Bemen Kal</figcaption>
+                </figure>
+
+                <h3>Bemen Kal</h3>
+                <p>Artist: Mastewal Eyayu</p>
+                <p>Genre: Ethiopian Music</p>
+
+                <audio controls>
+                    <source src="Music/ela_tv_Mastewal_Eyayu_Bemen_Kal_በምን_ቃል_New_Ethiopian_M.mp3"
+                            type="audio/mpeg">
+                    Your browser does not support audio playback.
+                </audio>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="Pics/GLY.png" alt="Girls Like You album cover">
+                    <figcaption>Girls Like You</figcaption>
+                </figure>
+
+                <h3>Girls Like You</h3>
+                <p>Artist: Maroon 5 ft. Cardi B</p>
+                <p>Genre: Pop</p>
+
+                <audio controls>
+                    <source src="Music/Maroon 5 - Girls Like You ft. Cardi B (Official Music Video).mp3"
+                            type="audio/mpeg">
+                    Your browser does not support audio playback.
+                </audio>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="Pics/TD_LN.png" alt="Lijemregne New album cover">
+                    <figcaption>Lijemregne New</figcaption>
+                </figure>
+
+                <h3>Lijemregne New</h3>
+                <p>Artist: Tamrat Desta</p>
+                <p>Genre: Ethiopian Music</p>
+
+                <audio controls>
+                    <source src="Music/Lijemregne New.mp3"
+                            type="audio/mpeg">
+                    Your browser does not support audio playback.
+                </audio>
+            </article>
+        </section>
+
+        <section id="leased">
+            <header>
+                <h2>Leased Music</h2>
+                <p>Manage your leased songs and track their expiration dates.</p>
+            </header>
+
+            <table>
+                <caption>Your leased music collection</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Song</th>
+                        <th scope="col">Artist</th>
+                        <th scope="col">Lease Start</th>
+                        <th scope="col">Lease Expiry</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Bemen Kal</td>
+                        <td>Mastewal Eyayu</td>
+                        <td><time datetime="2026-11-20">Nov 20, 2026</time></td>
+                        <td><time datetime="2026-12-30">Dec 30, 2026</time></td>
+                        <td>Active</td>
+                        <td><button type="button">Renew Lease</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Embi</td>
+                        <td>Mastewal Eyayu</td>
+                        <td><time datetime="2026-11-15">Nov 15, 2026</time></td>
+                        <td><time datetime="2026-12-25">Dec 25, 2026</time></td>
+                        <td>Active</td>
+                        <td><button type="button">Renew Lease</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Lijemregne New</td>
+                        <td>Tamrat Desta</td>
+                        <td><time datetime="2026-10-20">Oct 20, 2026</time></td>
+                        <td><time datetime="2026-11-25">Nov 25, 2026</time></td>
+                        <td>Expiring Soon</td>
+                        <td><button type="button">Renew Lease</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><small>Lease renewal buttons are demonstration controls.</small></p>
+        </section>
+
+        <section id="downloads">
+            <header>
+                <h2>Downloaded Music</h2>
+                <p>Enjoy your music offline anytime.</p>
+            </header>
+
+            <h3>Your Downloads</h3>
+
+            <table>
+                <caption>Downloaded songs</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Song</th>
+                        <th scope="col">Artist</th>
+                        <th scope="col">Format</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Bemen Kal</td>
+                        <td>Mastewal Eyayu</td>
+                        <td>MP3</td>
+                        <td><button type="button">Remove</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Monalisa</td>
+                        <td>LOJAY X SARZ</td>
+                        <td>MP3</td>
+                        <td><button type="button">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><small>Remove buttons are demonstration controls.</small></p>
+
+            <article>
+                <h3>Download More Music</h3>
+                <p>Explore our music collection to discover more songs.</p>
+                <a href="Home.html#Music">Explore Music</a>
+            </article>
+        </section>
+
+        <section id="free-listening">
+            <header>
+                <h2>Free Listening Plan</h2>
+                <p>Keep track of your monthly free music allowance.</p>
+            </header>
+
+            <article>
+                <h3>Monthly Usage</h3>
+
+                <label for="listening-progress">
+                    Free songs used this month
+                </label>
+
+                <progress id="listening-progress" value="12" max="30"></progress>
+
+                <p>12 out of 30 free songs used.</p>
+                <p>18 free songs remaining this month.</p>
+            </article>
+
+            <article>
+                <h3>About Your Free Plan</h3>
+                <ul>
+                    <li>You can listen to up to 30 free songs per month.</li>
+                    <li>Your allowance resets at the beginning of each month.</li>
+                    <li>Leasing or subscribing may provide additional access.</li>
+                </ul>
+                <a href="Home.html#Payment">Explore music packages</a>
+            </article>
+        </section>
+
+        <section id="library-help">
+            <h2>Library Help</h2>
+
+            <details>
+                <summary>How do I create a playlist?</summary>
+                <p>Enter a playlist name and description in the playlist creation form, then submit your details.</p>
+            </details>
+
+            <details>
+                <summary>How do I renew leased music?</summary>
+                <p>Find your song in the Leased Music section and select the Renew Lease button.</p>
+            </details>
+
+            <details>
+                <summary>Where can I find my downloaded songs?</summary>
+                <p>Your downloaded music is listed in the Downloaded Music section of your library.</p>
+            </details>
+
+            <details>
+                <summary>How does free listening work?</summary>
+                <p>Your free listening section tracks the number of songs used against your monthly allowance.</p>
+            </details>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <address>
+            Spot Play - Music Made Simple
+        </address>
+        <p><small>&copy; 2026 Spot Play. All rights reserved.</small></p>
+    </footer>
+
 </body>
 </html>
