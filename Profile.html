@@ -145,6 +145,31 @@
             
             <label for="quota-meter">Quota Usage:</label>
             <meter id="quota-meter" value="18" min="0" max="30" low="10" high="25" optimum="0">18 out of 30</meter>
+            <p>Your listening quota resets on
+                  <time datetime="2026-12-01">December 1, 2026</time>.
+            </p>
+            
+           <h3>Choose a Subscription Plan</h3>
+
+           <form action="#" method="post">
+               <label for="subscription-plan">Available Plans:</label>
+               <select id="subscription-plan" name="subscription-plan">
+                    <optgroup label="Free Plan">
+                       <option value="free" selected>Free - 30 songs per month</option>
+                    </optgroup>
+
+                    <optgroup label="Paid Plans">
+                       <option value="package">Song Package</option>
+                       <option value="lease">Song Lease</option>
+                       <option value="premium">Premium Subscription</option>
+                    </optgroup>
+                </select>
+
+                <br><br>
+                <button type="submit">Upgrade Plan</button>
+                <button type="button">Cancel Subscription</button>
+            </form>
+
         </section>
     </main>
 
