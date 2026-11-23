@@ -1,11 +1,323 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+
+    <title>My Profile | Spot Play</title>
+
+    <meta name="description" content="Manage your Spot Play account, profile information, subscription, and settings.">
+
+    <link rel="icon" href="pics/favicon.png" type="image/png">
 </head>
+
 <body>
+
+    <header>
+        <h1>Spot Play</h1>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Profile</h1>
+
+        <p>Manage your personal information, subscription, and account settings.</p>
+
+        <section>
+            <h2>Profile Information</h2>
+
+            <figure>
+                <img src="pics/profile-photo.jpg"
+                     alt="User profile avatar"
+                     width="150"
+                     height="150">
+
+                <figcaption>Abebe Kebede</figcaption>
+            </figure>
+
+            <p><strong>Username:</strong> Abebe Kebede</p>
+
+            <p><strong>Current Plan:</strong> Free Plan</p>
+
+            <button type="button">Edit Profile</button>
+
+            <button type="button">Change Photo</button>
+        </section>
+
+        <section>
+            <h2>Account Details</h2>
+
+            <dl>
+                <dt>Full Name:</dt>
+                <dd>Abebe Kebede</dd>
+
+                <dt>Email Address:</dt>
+                <dd>abebe@example.com</dd>
+
+                <dt>Account ID:</dt>
+                <dd>SP-2026-001</dd>
+
+                <dt>Account Created:</dt>
+                <dd>
+                    <time datetime="2026-01-15">January 15, 2026</time>
+                </dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Edit Profile</h2>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname"
+                           value="Abebe Kebede" required>
+
+                    <br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email"
+                           value="abebe@example.com" required>
+
+                    <br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"
+                           pattern="0[79][0-9]{8}"
+                           placeholder="09XXXXXXXX">
+
+                    <br><br>
+
+                    <label for="photo">Upload Profile Photo:</label>
+                    <input type="file" id="photo" name="photo"
+                           accept="image/*">
+
+                    <br><br>
+
+                    <label for="bio">About Me:</label>
+                    <textarea id="bio" name="bio" rows="4" cols="40"
+                              placeholder="Write something about yourself"></textarea>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Password Information</legend>
+
+                    <label for="password">New Password:</label>
+                    <input type="password" id="password" name="password">
+
+                    <br><br>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password"
+                           name="confirm-password">
+
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Save Changes</button>
+
+            </form>
+        </section>
+        
+        <section>
+            <h2>Subscription and Listening Quota</h2>
+
+            <p>Current Subscription: <strong>Free Plan</strong></p>
+            <p>You have listened to 18 out of 30 songs this month.</p>
+
+            <label for="listening-progress">Monthly Listening Usage:</label>
+            <progress id="listening-progress" value="18" max="30">18 out of 30</progress>
+            
+            <label for="quota-meter">Quota Usage:</label>
+            <meter id="quota-meter" value="18" min="0" max="30" low="10" high="25" optimum="0">18 out of 30</meter>
+            <p>Your listening quota resets on
+                  <time datetime="2026-12-01">December 1, 2026</time>.
+            </p>
+            
+           <h3>Choose a Subscription Plan</h3>
+
+           <form action="#" method="post">
+               <label for="subscription-plan">Available Plans:</label>
+               <select id="subscription-plan" name="subscription-plan">
+                    <optgroup label="Free Plan">
+                       <option value="free" selected>Free - 30 songs per month</option>
+                    </optgroup>
+
+                    <optgroup label="Paid Plans">
+                       <option value="package">Song Package</option>
+                       <option value="lease">Song Lease</option>
+                       <option value="premium">Premium Subscription</option>
+                    </optgroup>
+                </select>
+
+                <br><br>
+                <button type="submit">Upgrade Plan</button>
+                <button type="button">Cancel Subscription</button>
+            </form>
+
+        </section>
+
+        <section>
+            <h2>Payment History</h2>
+
+            <table>
+                <caption>Your recent Spot Play payments</caption>
+
+                <thead>
+                     <tr>
+                         <th scope="col">Date</th>
+                         <th scope="col">Payment Method</th>
+                         <th scope="col">Description</th>
+                         <th scope="col">Amount (ETB)</th>
+                        <th scope="col">Status</th>
+                      </tr>
+                </thead>
+
+           <tbody>
+              <tr>
+                <td><time datetime="2026-10-05">October 5, 2026</time></td>
+                <td>Telebirr</td>
+                <td>Song Package</td>
+                <td>50</td>
+                <td><strong>Approved</strong></td>
+            </tr>
+
+               <tr>
+                   <td><time datetime="2026-10-18">October 18, 2026</time></td>
+                   <td>CBE Birr</td>
+                   <td>Song Lease</td>
+                   <td>30</td>
+                   <td><strong>Approved</strong></td>
+                </tr>
+
+                <tr>
+                    <td><time datetime="2026-11-02">November 2, 2026</time></td>
+                    <td>Telebirr</td>
+                    <td>Song Package</td>
+                    <td>50</td>
+                    <td><strong>Pending</strong></td>
+                 </tr>
+              </tbody>
+
+               <tfoot>
+                  <tr>
+                     <th colspan="3" scope="row">Total Amount</th>
+                     <td>130 ETB</td>
+                     <td>2 Approved, 1 Pending</td>
+                   </tr>
+               </tfoot>
+           </table>
+      </section>
+          <section>
+    <h2>Settings and Preferences</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Notification Preferences</legend>
+
+            <input type="checkbox" id="email-notifications" name="notifications" value="email" checked>
+            <label for="email-notifications">Receive email notifications</label>
+            <br><br>
+
+            <input type="checkbox" id="music-updates" name="notifications" value="music">
+            <label for="music-updates">Receive new music and playlist updates</label>
+            <br><br>
+
+            <input type="checkbox" id="promotions" name="notifications" value="promotions">
+            <label for="promotions">Receive promotional messages and offers</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Appearance Settings</legend>
+
+            <p>Choose your preferred theme:</p>
+
+            <input type="radio" id="light-theme" name="theme" value="light" checked>
+            <label for="light-theme">Light Theme</label>
+            <br>
+
+            <input type="radio" id="dark-theme" name="theme" value="dark">
+            <label for="dark-theme">Dark Theme</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Settings</legend>
+
+            <label for="payment-method">Preferred Payment Method:</label>
+
+            <select id="payment-method" name="payment-method">
+                <option value="telebirr">Telebirr</option>
+                <option value="cbe-birr">CBE Birr</option>
+                <option value="bank-transfer">Bank Transfer</option>
+            </select>
+        </fieldset>
+
+        <br>
+        <button type="submit">Save Preferences</button>
+       </form>
+    </section>
+        
+        <section>
+            <h2>Help and Frequently Asked Questions</h2>
+
+            <details>
+                <summary>How can I change my profile information?</summary>
+                <p>Go to the Edit Profile section, update your information, and select Save Changes.</p>
+            </details>
+
+            <details>
+                <summary>How many songs can I listen to with the Free Plan?</summary>
+                <p>The Free Plan allows you to listen to 30 songs per month.</p>
+            </details>
+
+            <details>
+                <summary>How can I upgrade my subscription?</summary>
+                <p>Select your preferred plan from the Subscription section and choose Upgrade Plan.</p>
+            </details>
+
+            <details>
+                <summary>Which payment methods are supported?</summary>
+                <p>Spot Play supports payment options such as Telebirr and CBE Birr.</p>
+            </details>
+        </section>
+
+    </main>
     
+    <footer>
+        <p><strong>Spot Play - Music Made Simple</strong></p>
+
+        <p>Developed by Group 5, Section A</p>
+        <p>Addis Ababa Science and Technology University (AASTU)</p>
+
+        <p>
+            <small>
+                &copy; <time datetime="2026">2026</time> Spot Play.
+                All rights reserved.
+            </small>
+        </p>
+
+        <p>
+            <a href="home.html">Home</a> |
+            <a href="library.html">Library</a> |
+            <a href="profile.html">My Profile</a>
+        </p>
+    </footer>
+
 </body>
 </html>
+
